@@ -115,7 +115,7 @@ for test_dir in "$TESTS_DIR"/*/; do
     # Measure time in ms
     start_ns=$(date +%s%N)
 
-    actual=$(run_with_timeout $TEST_TIMEOUT python3 "$STUDENT_DIR/main.py" < "$input_file" 2>/dev/null)
+    actual=$(run_with_timeout $TEST_TIMEOUT run_student python3 "$STUDENT_DIR/main.py" < "$input_file" 2>/dev/null)
     run_exit=$?
 
     end_ns=$(date +%s%N)
