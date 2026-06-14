@@ -4,4 +4,4 @@
 set -xe  # exit immediately on any error
 
 apt-get update -qq
-apt-get install gcc
+apt-get install -y --no-install-recommends gcc
